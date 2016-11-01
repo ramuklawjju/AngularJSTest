@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="HelloWorldApp" >
+    <div ng-controller="HelloWorldController">
+        <h1> Hello {{who}} </h1>
+    </div>
+    <div ng-controller="whoAmI">
+        <span style="font:15px Verdana;">I am {{firstname}} {{lastname}}!</span>
+    </div>
+</div>
+    <script>
+        var HWApp = angular.module('HelloWorldApp', []);
+
+        HWApp.controller('HelloWorldController',
+            ['$scope', function ($greet) {
+                $greet.who = 'World!';
+            }]
+        );
+        HWApp.controller(
+        	    'whoAmI',
+        	    ['$scope', function ($greet1) {
+        	        $greet1.firstname = 'Arun';
+        	        $greet1.lastname = 'Banik';
+        	    } ]
+        	);
+    </script>
+    
+  </body>
+</html>

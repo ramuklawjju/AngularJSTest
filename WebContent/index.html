@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Study Blog</title>
+<link rel="stylesheet" href="css/icon.css">
+<link rel="stylesheet" href="css/font.css" type="text/css">
+<link rel="stylesheet" href="css/material.css" />
+<script defer src="js/material.min.js"></script>
+<style>
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('images/bg.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+.demo-list-control {
+  width: 300px;
+}
+
+.demo-list-radio {
+  display: inline;
+}
+.demo-list-three {
+  width: 650px;
+}
+.container {
+  overflow: hidden;
+  display: block;
+}
+.sidebar {
+  float: right;
+  width: 32%;
+  margin-right: 2.5%;
+  background: #fff;
+  color: #475258;
+}
+
+.sidebar_hr{
+border-bottom: 1px solid #e1e5e7;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.sidebar a h4 {
+  color: #475258;
+}
+.sidebar a span {
+  display: block;
+  margin-top: 6%;
+  color: #009688;
+  font-size: 8pt;
+}
+.content {
+  float: left;
+  width: 62.5%;
+  background: #fff;
+}
+
+.desc {
+  position: relative;
+  background: #fff;
+  padding: 2% 2% 2% 2%;
+}
+.desc .type {
+  display: block;
+  background: #57cbc8;
+  color: #fff;
+  font-size: 14pt;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.desc h1 {
+  font-size: 19pt;
+  color: #009688;
+  margin-bottom: 3%;
+}
+.desc p {
+  line-height: 1.5em;
+  color: #999;
+  font-weight: 300;
+}
+.desc a {
+  
+  text-decoration: none;
+  transition: 0.3s;
+}
+.desc a:hover {
+  color: #009688;
+}
+.share {
+  margin-top: 5%;
+}
+.share li {
+  display: inline-block;
+  margin-right: 5%;
+  font-weight: 300;
+}
+.share a {
+  color: #009688;
+  transition: 0.3s;
+}
+.share a i,
+.share a:hover {
+  color: #009688;
+}
+
+</style>
+
+</head>
+<body>
+<!-- Number badge -->
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Hello World</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+       <!-- Right aligned menu below button -->
+<button id="demo-menu-lower-right"
+        class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">more_vert</i>
+</button>
+
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-right">
+  <li class="mdl-menu__item">Added a new feature</li>
+  <li class="mdl-menu__item">Developed a data dictionary</li>
+  <li disabled class="mdl-menu__item">Disabled Action</li>
+  <li class="mdl-menu__item">Yet Another Action</li>
+</ul>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Study Blog</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Home</a>
+      <a class="mdl-navigation__link" href="">Login</a>
+      <a class="mdl-navigation__link" href="">About Me</a>
+      <a class="mdl-navigation__link" href="">Queries</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+
+<div class="container">
+  <div class="sidebar">
+    <h4>Popular Members &nbsp;&nbsp;<i class="material-icons">&#xE922;</i></h4>
+    <div class="sidebar_hr"></div>
+    <div class="demo-list-action mdl-list">
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">person</i>
+      <span>Bryan Cranston</span>
+      
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">person</i>
+      <span>Aaron Paul</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">person</i>
+      <span>Bob Odenkirk</span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+  </span>
+  </div>
+</div>
+    
+    <h4>Popular Topics &nbsp;&nbsp;<i class="material-icons">&#xE922;</i></h4>
+    <div class="sidebar_hr"></div>
+  <!-- List items with avatar and action -->
+
+<div class="demo-list-action mdl-list">
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">&#xE865;</i>
+      <span>Bryan Cranston</span>
+      
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">&#xE865;</i>
+      <span>Aaron Paul</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">&#xE865;</i>
+      <span>Bob Odenkirk</span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+  </span>
+  </div>
+</div>
+    
+    
+    
+     <h4>What's Hot &nbsp;&nbsp;<i class="material-icons">&#xE922;</i></h4>
+     <div class="sidebar_hr"></div>
+    <ul class="demo-list-three mdl-list">
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">&#xE3F4;</i>
+      <span>A New York doesn't necessary come from..</span>
+      <span class="mdl-list__item-text-body">
+        3 minutes ago
+      </span>
+    </span>
+  </li>
+    
+    
+    
+     <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">&#xE3F4;</i>
+      <span>A New York doesn't necessary come from..</span>
+      <span class="mdl-list__item-text-body">
+        3 minutes ago
+      </span>
+    </span>
+  </li>
+  
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">&#xE3F4;</i>
+      <span>A New York doesn't necessary take cab..</span>
+      <span class="mdl-list__item-text-body">
+        3 hours ago
+      </span>
+    </span>
+  </li>
+  
+
+  
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">&#xE3F4;</i>
+      <span>A New York doesn't necessary pay fee..</span>
+      <span class="mdl-list__item-text-body">
+        6 hours ago
+      </span>
+    </span>
+  </li>
+  
+       
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">&#xE3F4;</i>
+      <span>A New York doesn't necessary drink beer..</span>
+      <span class="mdl-list__item-text-body">
+        10 hours ago
+      </span>
+    </span>
+  </li>
+  
+       
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">&#xE3F4;</i>
+      <span>A New York doesn't necessary come from..</span>
+      <span class="mdl-list__item-text-body">
+       1 day ago
+      </span>
+    </span>
+  </li>
+  
+    </ul>
+  </div>
+  
+  <div class="content">
+    
+    <div class="desc">
+      
+      
+      <h1>What is Lorem Ipsum?</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eveniet hic eaque neque explicabo architecto rerum porro cupiditate dignissimos ratione doloribus veritatis maiores sed consequuntur totam nostrum inventore ex fugit... <a href="#">Read more</a></p>
+      
+      <div class="share">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="material-icons">&#xE0DF;</i> 569 Shares
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="material-icons">&#xE8F4;</i> 3,152 Views
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="material-icons">&#xE0B9;</i> 21 Comments
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+   
+
+</main>
+
+</div>
+
+
+</body>
+</html>
